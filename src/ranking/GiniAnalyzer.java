@@ -146,7 +146,7 @@ public class GiniAnalyzer {
 			sum += n.number;
 		}
 		logger.trace("compute gini coefficient");
-		/*double currentCumX = 0;
+		double currentCumX = 0;
 		double currentCumY = 0;
 		double area = 0;
 		double x = 1. / numbers.size();
@@ -157,16 +157,16 @@ public class GiniAnalyzer {
 			currentCumY += y;
 			logger.trace(currentCumX + " " + currentCumY + " " + area + " " + n.number);
 		}
-		gini = (0.5 - area) /  0.5;*/
+		gini = (0.5 - area) /  0.5;
 		//computeCritical();
-		double num = 0;
+		/*double num = 0;
 		double den = 0;
 		for (int i = 0; i < numbers.size(); i++) {
 			Entity n = numbers.get(i);
 			num += (i + 1) * n.number;
 			den += n.number;
 		}
-		gini = 2. / numbers.size() * num / den - (numbers.size() + 1.) / numbers.size(); 
+		gini = 2. / numbers.size() * num / den - (numbers.size() + 1.) / numbers.size(); */
 		logger.trace(numbers.size() + " " + sum + " " + min + " "  + max + " " + gini);
 	}
 	
