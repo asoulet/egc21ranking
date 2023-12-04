@@ -10,7 +10,7 @@ public class Ranking {
 
 	public final static String NAME = "ranking";
 	public final static String VERSION = "EGC21";
-	public final static String CONFIGURATION_FILE = "properties/rankingdom.properties";
+	public final static String CONFIGURATION_FILE = "properties/ranking.properties";
 
 	public static void main(String[] args) {
 		logger.info(NAME + " " + VERSION);
